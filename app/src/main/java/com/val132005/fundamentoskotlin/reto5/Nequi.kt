@@ -48,7 +48,8 @@ fun main() {
                 println("¿Cuanto dinero desea retirar?")
                 dinero= readLine()!!.toDouble()
                 if (dinero>saldoActual){
-                    println("Usted no puede retirar un valor mayor a su saldo actual equivalente a $saldoActual")
+                    println("Usted no puede retirar un valor mayor a su saldo actual " +
+                            "equivalente a $saldoActual")
                 }else if (dinero<0){
                     println("Valor no valido")
                 }else{
@@ -86,7 +87,7 @@ fun main() {
         //Recarga de dinero
         }else if (funcionalidad==3){
             println("Recargar dinero")
-            print("Por favor ingrese el ñla cantidad de nidero que desea ingresar: ")
+            print("Por favor ingrese el la cantidad de dinero que desea ingresar: ")
             dinero= readLine()!!.toDouble()
             println("¿Usted esta seguro de realizar la recarga?\n1. Si\n2. No")
             var decision = readLine()!!.toString().lowercase()
